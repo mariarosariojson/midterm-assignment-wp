@@ -32,7 +32,7 @@ add_action('wp_enqueue_scripts', 'final_register_styles');
 
 function final_register_scripts()
 {
-    wp_enqueue_script('final-jsscript', get_template_directory_uri() . "/assets/main.js", array(), '3.4.1', true);
+    wp_enqueue_script('final-jsscript', get_template_directory_uri() . "/assets/js/main.js", array(), '3.4.1', true);
 }
 
 add_action('wp_enqueue_scripts', 'final_register_scripts');
@@ -41,7 +41,7 @@ function custom_hero_block()
 {
     wp_register_script(
         'custom-hero-block',
-        get_stylesheet_directory_uri() . '/js/custom-hero-block.js',
+        get_stylesheet_directory_uri() . 'wp-content/themes/final-assignment/assets/js/custom-hero-block.js',
         array('wp-blocks', 'wp-element', 'wp-editor'),
         true
     );
@@ -54,11 +54,3 @@ function custom_hero_block()
     );
 }
 add_action('init', 'custom_hero_block');
-
-function remove_hero_image_on_specific_page()
-{
-    if (is_page('om-produkten')) {
-        remove_action('theme_header', 'theme_hero_image');
-    }
-}
-add_action('template_redirect', 'remove_hero_image_on_specific_page');
