@@ -1,0 +1,257 @@
+WORDPRESS
+
+/*
+ Theme Name:   Final Theme
+ Description:  My theme for the final assignment
+ Author:       Maria Rosario Johansson
+ Author URI:   http://mrj-devdesign.com
+ Template:
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, responsive-layout, webshop
+ Text Domain:  Final Theme
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: whitesmoke;
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+  font-weight: bold;
+}
+
+.btn {
+  font-weight: bold;
+  padding: 0.375rem 1rem;
+  height: 2.75rem;
+  transition: all 0.4s ease-in-out;
+}
+.fa-tag,
+.fa-comment {
+  margin-right: 5px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 88px;
+  align-items: center;
+  background: #F3F6FA;
+}
+.header .navigation {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  justify-content: space-between;
+}
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  width: fit-content;
+  background-color: #F3F6FA;
+}
+.nav-item a {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 2rem;
+  padding: 0rem 2.5rem;
+  text-decoration: none;
+  z-index: 1;
+  align-items: center;
+}
+.nav-item a:hover {
+color: #505050;
+}
+.header .site-title {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+  color: #3C64B1;
+  padding: 0rem 5rem 0rem 5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: whitesmoke;
+}
+.hero-img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  background-image: url(http://localhost:8888/wp-content/uploads/2023/05/daniel-storek-JM-qKEd1GMI-unsplash-scaled.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.hero-img-about {
+  display: flex;
+  width: 100%;
+  height: 581px;
+  background-image: url(http://localhost:8888/wp-content/uploads/2023/05/simon-berger-twukN12EN7c-unsplash-scaled-e1683628734214.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-img-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: -4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: whitesmoke;
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.page-title .heading {
+ visibility: hidden;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: -18rem;
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+}
+.content-front-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 5rem;
+  align-items: center;
+  color: #737b7d;
+  font-weight: 400;
+  font-size: 16px;
+}
+.content-front-page p {
+  color: #737b7d;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.content-front-page-btn {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: center;
+  background-color: #3C64B1;
+  color: #f2f2f2;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 14px;
+  width: fit-content;
+}
+footer {
+  padding: 2rem;
+  background-color: #373F41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+.copyright-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+.content .post .title {
+  font-size: 1.275rem;
+}
+.content .post .title a {
+  color: #737b7d;
+  text-decoration: none;
+}
+.content .post .title a:hover {
+  color: rgb(247, 93, 76);
+}
+.content .post .post-thumb {
+  max-width: 160px;
+  border-radius: 2px;
+}
+.content .post .intro {
+  font-size: 0.875rem;
+}
+.content .post .more-link {
+  font-size: var(--font-small);
+}
+.meta {
+  color: #737b7d;
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+.meta span {
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+.meta span a {
+  color: #737b7d;
+}
+.meta span.tag {
+  background-color: var(--lightgray);
+  padding: 0 0.5em;
+  border-radius: 5px;
+}
+.meta span a:hover {
+  color: var(--secondary);
+}
+.meta span:last-child:after {
+  display: none;
+}
+.blog-nav a {
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  position: relative;
+}
+.blog-nav a:hover {
+  background: var(--secondary);
+}
+.blog-nav .nav-link-prev {
+  border-right: 1px solid var(--secondary);
+}
+.blog-nav .arrow-prev {
+  position: absolute;
+  left: 1rem;
+  top: 1.25rem;
+  color: #fff;
+}
+.blog-nav .arrow-next {
+  position: absolute;
+  right: 1rem;
+  top: 1.25rem;
+  color: #fff;
+}

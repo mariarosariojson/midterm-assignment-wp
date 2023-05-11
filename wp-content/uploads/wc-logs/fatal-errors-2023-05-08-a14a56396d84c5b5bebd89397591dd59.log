@@ -1,0 +1,32 @@
+2023-05-08T13:00:39+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Applications/MAMP/htdocs/childtheme-assignment/wp-content/plugins/woocommerce/includes/wc-product-functions.php:990
+Stack trace:
+#0 /Applications/MAMP/htdocs/childtheme-assignment/wp-content/themes/storefront-child/functions.php(17): wc_get_price_including_tax(NULL, Array)
+#1 /Applications/MAMP/htdocs/childtheme-assignment/wp-settings.php(591): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/childtheme-assignment/wp-config.php(97): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/childtheme-assignment/wp-load.php(50): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/childtheme-assignment/wp-blog-header.php(13): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/childtheme-assignment/index.php(17): require('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/childtheme-assignment/wp-content/plugins/woocommerce/includes/wc-product-functions.php on line 990
+
+2023-05-08T13:01:01+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Applications/MAMP/htdocs/childtheme-assignment/wp-content/plugins/woocommerce/includes/wc-product-functions.php:990
+Stack trace:
+#0 /Applications/MAMP/htdocs/childtheme-assignment/wp-content/themes/storefront-child/functions.php(17): wc_get_price_including_tax(NULL, Array)
+#1 /Applications/MAMP/htdocs/childtheme-assignment/wp-settings.php(591): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/childtheme-assignment/wp-config.php(97): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/childtheme-assignment/wp-load.php(50): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/childtheme-assignment/wp-admin/admin-ajax.php(22): require_once('/Applications/M...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/childtheme-assignment/wp-content/plugins/woocommerce/includes/wc-product-functions.php on line 990
+
+2023-05-08T13:01:11+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Applications/MAMP/htdocs/childtheme-assignment/wp-content/plugins/woocommerce/includes/wc-product-functions.php:990
+Stack trace:
+#0 /Applications/MAMP/htdocs/childtheme-assignment/wp-content/themes/storefront-child/functions.php(4): wc_get_price_including_tax(NULL, Array)
+#1 /Applications/MAMP/htdocs/childtheme-assignment/wp-settings.php(591): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/childtheme-assignment/wp-config.php(97): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/childtheme-assignment/wp-load.php(50): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/childtheme-assignment/wp-blog-header.php(13): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/childtheme-assignment/index.php(17): require('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/childtheme-assignment/wp-content/plugins/woocommerce/includes/wc-product-functions.php on line 990
+
