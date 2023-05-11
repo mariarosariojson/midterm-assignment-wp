@@ -1,8 +1,7 @@
-<div class="hero-img-about"><img src="(http://localhost:8888/wp-content/uploads/2023/05/daniel-storek-JM-qKEd1GMI-unsplash-scaled.jpg" alt="">
+<div class="hero-img-about" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
     <span class="hero-img-p">
         <?php the_title(); ?>
     </span>
-
 </div>
 <?php
 /*
