@@ -1,1 +1,2 @@
-<div>test</div>
+<?php
+// Silence is golden.
