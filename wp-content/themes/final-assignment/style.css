@@ -23,7 +23,7 @@
 }
 
 a {
-  color: whitesmoke;
+  color: rgb(50, 50, 50);
 }
 
 h1,
@@ -142,8 +142,11 @@ color: #505050;
 .content-post {
   height: fit-content;
   margin-top: 5rem;
-  width: 100%;
+  width: 80%;
   align-items: center;
+}
+.post-thumbnail {
+  width: 10%;
 }
 .content-front-page p {
   color: #737b7d;
