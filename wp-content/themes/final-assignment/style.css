@@ -97,18 +97,20 @@ color: #505050;
   display: flex;
   width: 100%;
   height: 70vh;
+  background-size: cover;
+  background-position: center;
 }
 .hero-img-about {
   display: flex;
   width: 100%;
   height: 581px;
+  background-size: cover;
 }
 .hero-img-p {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-left: -4rem;
   font-size: 2rem;
   font-weight: 700;
   color: whitesmoke;
@@ -138,6 +140,18 @@ color: #505050;
 }
 .content-front-page {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-about {
+  display: flex;
+  flex-direction: column;
+  margin-top: -15rem;
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .content-post {
   height: fit-content;
@@ -175,12 +189,29 @@ color: #505050;
   line-height: 1.7rem;
 }
 .post-content {
-  margin: 0 auto;
+  margin: 3rem auto;
   width: 50%;
   font-weight: 100;
+  text-align: center;
+  list-style: none;
 }
-
+.single-post-img {
+  margin-top: 3rem;
+  height: 360px;
+  overflow: hidden;
+}
+.meta-data {
+  margin: 2rem auto
+}
+.page-link a {
+  margin-bottom: 2rem;
+  color: #505050;
+  font-weight: 900;
+  text-decoration: none;
+  height: 5rem;
+}
 footer {
+  margin-top: 2rem;
   padding: 2rem;
   background-color: #373F41;
   display: flex;
@@ -195,73 +226,4 @@ footer {
   text-decoration: none;
   font-size: 0.7rem;
   text-transform: uppercase;
-}
-.content .post .title {
-  font-size: 1.275rem;
-}
-.content .post .title a {
-  color: #737b7d;
-  text-decoration: none;
-}
-.content .post .title a:hover {
-  color: rgb(50, 50, 50);
-}
-.content .post .post-thumb {
-  max-width: 160px;
-  border-radius: 2px;
-}
-.content .post .intro {
-  font-size: 0.875rem;
-}
-.content .post .more-link {
-  font-size: var(--font-small);
-}
-.meta {
-  color: #737b7d;
-  font-size: 0.9rem;
-  margin: 1rem;
-}
-.meta span {
-  display: inline-block;
-  margin-right: 0.25rem;
-}
-.meta span a {
-  color: #737b7d;
-}
-.meta span.tag {
-  background-color: var(--lightgray);
-  padding: 0 0.5em;
-  border-radius: 5px;
-}
-.meta span a:hover {
-  color: var(--secondary);
-}
-.meta span:last-child:after {
-  display: none;
-}
-.blog-nav a {
-  background: var(--primary);
-  color: rgb(50, 50, 50);
-  font-size: 1rem;
-  padding: 1rem;
-  font-weight: bold;
-  position: relative;
-}
-.blog-nav a:hover {
-  background: var(--secondary);
-}
-.blog-nav .nav-link-prev {
-  border-right: 1px solid var(--secondary);
-}
-.blog-nav .arrow-prev {
-  position: absolute;
-  left: 1rem;
-  top: 1.25rem;
-  color: rgb(50, 50, 50);
-}
-.blog-nav .arrow-next {
-  position: absolute;
-  right: 1rem;
-  top: 1.25rem;
-  color: rgb(50, 50, 50);
 }

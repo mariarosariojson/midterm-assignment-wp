@@ -11,7 +11,7 @@ get_header();
 ?>
 
 <article>
-    <div class="content">
+    <div class="content-about">
         <?php the_content(); ?>
     </div>
 </article>

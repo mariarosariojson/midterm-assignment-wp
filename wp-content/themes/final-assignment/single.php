@@ -3,19 +3,24 @@ get_header();
 ?>
 
 
-<div class="single-page-wrapper">
-    <div class="single-page-content">
-        <p><?php the_time(get_option('date_format')); ?></p>
-        <h1><?php the_title(); ?></h1>
-
-        <div class="single-page-img">
+<div class="container">
+    <div class="content">
+        <div class="post-title">
+            <h1><?php the_title(); ?></h1>
+        </div>
+        <div class="single-post-img">
             <?php the_post_thumbnail('large'); ?>
         </div>
-
-    </div>
-    <div class="single-page-link">
-        <?php the_content(); ?>
-        <a class="page-link" href="http://localhost:8888/"> Back</a>
+        <div class="meta-data">
+            <p><?php the_time(get_option('date_format')); ?></p>
+        </div>
+        <div class="post-content">
+            <?php the_content(); ?>
+        </div>
+        <div class="page-link">
+            <a href="http://localhost:8888/">Back to home</a>
+        </div>
+        <br>
     </div>
 </div>
 
