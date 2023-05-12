@@ -95,21 +95,13 @@ color: #505050;
 }
 .hero-img {
   display: flex;
-  flex-direction: column;
   width: 100%;
   height: 70vh;
-  background-position: bottom;
-  background-size: cover;
 }
 .hero-img-about {
   display: flex;
   width: 100%;
   height: 581px;
-  background: url(http://localhost:8888/wp-content/uploads/2023/05/simon-berger-twukN12EN7c-unsplash-scaled.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #3C64B1;
 }
 .hero-img-p {
   display: flex;
@@ -127,6 +119,14 @@ color: #505050;
   width: 100%;
   margin-top: 20rem;
 }
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: -15rem;
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -136,23 +136,14 @@ color: #505050;
 .page-title .heading {
  visibility: hidden;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  margin-top: -18rem;
-  height: fit-content;
-  width: 100%;
-  align-items: center;
-}
 .content-front-page {
   display: flex;
-  flex-direction: column;
+}
+.content-post {
+  height: fit-content;
+  margin-top: 5rem;
   width: 100%;
-  line-height: 5rem;
   align-items: center;
-  color: #737b7d;
-  font-weight: 400;
-  font-size: 16px;
 }
 .content-front-page p {
   color: #737b7d;
@@ -184,7 +175,6 @@ color: #505050;
   margin: 0 auto;
   width: 50%;
   font-weight: 100;
-  line-height: 1.7rem;
 }
 footer {
   padding: 2rem;

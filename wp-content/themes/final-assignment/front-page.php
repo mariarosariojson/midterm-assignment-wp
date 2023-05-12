@@ -1,4 +1,4 @@
-<div class="hero-img" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
+<div class="hero-img" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-position: center;"></div>
 <?php
 get_header()
 ?>
